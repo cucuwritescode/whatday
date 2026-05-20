@@ -12,12 +12,12 @@ jobs:
   bump:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: configure git identity
         run: |
           git config user.name "cucuwritescode"
-          git config user.email "facundo@gauchodsp.com"
+          git config user.email "anicsounds@gmail.com"
 
       - name: compile
         run: clang -Wall -Wextra -O2 datebump.c -o datebump
